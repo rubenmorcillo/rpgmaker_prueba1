@@ -261,4 +261,13 @@ class Actor
         return $this;
     }
 
+    public function __toString()
+    {
+        return "{ "
+            ."'ID':'".$this->getId()."',"
+            ."'name':'".$this->getName()."'"
+            . " }";
+    }
+
+
 }
